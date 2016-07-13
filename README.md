@@ -1,8 +1,8 @@
-# SignalProtocol.swift
+# SignalProtocol-ObjC
 
 [![Build Status](https://travis-ci.org/ChatSecure/SignalProtocol-ObjC.svg?branch=master)](https://travis-ci.org/ChatSecure/SignalProtocol-ObjC)
 
-Unofficial Swift wrapper for [libsignal-protocol-c](https://github.com/WhisperSystems/libsignal-protocol-c), built for use in [ChatSecure iOS](https://github.com/chatsecure/chatsecure-ios) to provide [OMEMO](https://conversations.im/omemo/) support. This software is not affiliated with or endorsed by Open Whisper Systems.
+Unofficial Objective-C wrapper for [libsignal-protocol-c](https://github.com/WhisperSystems/libsignal-protocol-c), built for use in [ChatSecure iOS](https://github.com/chatsecure/chatsecure-ios) to provide [OMEMO](https://conversations.im/omemo/) support. This software is not affiliated with or endorsed by Open Whisper Systems.
 
 ⚠️ **Under active development, do not use.** ⚠️
 
