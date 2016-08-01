@@ -38,9 +38,9 @@
 
 - (uint32_t) generateRegistrationId {
     uint32_t registration_id = 0;
-    int result = signal_protocol_key_helper_generate_registration_id(&registration_id, 0, _context.context);
-    if (result < 0) {
-        return 0;
+    int result = signal_protocol_key_helper_generate_registration_id(&registration_id, 1, _context.context);
+    if (result <= 0) {
+        return 1;
     }
     return registration_id;
 }

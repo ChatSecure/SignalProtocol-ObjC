@@ -19,7 +19,7 @@
 }
 
 - (instancetype) initWithRegistrationId:(uint32_t)registrationId
-                               deviceId:(int)deviceId
+                               deviceId:(uint32_t)deviceId
                                preKeyId:(uint32_t)preKeyId
                            preKeyPublic:(NSData*)preKeyPublic
                          signedPreKeyId:(uint32_t)signedPreKeyId
