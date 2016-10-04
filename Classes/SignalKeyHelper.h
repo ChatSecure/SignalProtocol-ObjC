@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Generate a registration ID.  Clients should only do this once,
- * at install time.
+ * at install time. If result is 0, there was an error.
  */
 - (uint32_t) generateRegistrationId;
 

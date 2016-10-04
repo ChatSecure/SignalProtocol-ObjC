@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SignalPreKeyBundle : NSObject
 
 @property (nonatomic, readonly) uint32_t registrationId;
-@property (nonatomic, readonly) int deviceId;
+@property (nonatomic, readonly) uint32_t deviceId;
 @property (nonatomic, readonly) uint32_t preKeyId;
 @property (nonatomic, strong, readonly) NSData *preKeyPublic;
 @property (nonatomic, readonly) uint32_t signedPreKeyId;
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic ,strong, readonly) NSData *identityKey;
 
 - (instancetype) initWithRegistrationId:(uint32_t)registrationId
-                               deviceId:(int)deviceId
+                               deviceId:(uint32_t)deviceId
                                preKeyId:(uint32_t)preKeyId
                            preKeyPublic:(NSData*)preKeyPublic
                          signedPreKeyId:(uint32_t)signedPreKeyId
