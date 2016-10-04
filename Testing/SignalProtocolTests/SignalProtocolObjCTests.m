@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+@import SignalProtocolObjC;
 #import "SignalStoreInMemoryStorage.h"
 
 @interface SignalProtocolObjCTests : XCTestCase
