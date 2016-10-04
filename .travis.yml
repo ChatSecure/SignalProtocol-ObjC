@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode8
+
+before_script:
+  - cd Testing
+  - bundle install
+  - bundle exec pod install
+  - set -o pipefail
+script:
+  - xcodebuild -workspace libsignal-protocol-c.xcworkspace -scheme signal-protocol-tests -sdk macosx -arch x86_64 test | xcpretty -c
