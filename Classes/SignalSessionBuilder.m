@@ -49,6 +49,7 @@
     NSAssert(result >= 0, @"couldn't process prekey bundle");
 }
 
+/*
 - (void) processPreKeyMessage:(SignalPreKeyMessage*)preKeyMessage {
     NSParameterAssert(preKeyMessage);
     if (!preKeyMessage) { return; }
@@ -56,5 +57,6 @@
     //int result = session_record_create(&record, <#session_state *state#>, <#signal_context *global_context#>)
     //int result = session_builder_process_pre_key_signal_message(_builder, <#session_record *record#>, <#pre_key_signal_message *message#>, <#uint32_t *unsigned_pre_key_id#>)
 }
+ */
 
 @end

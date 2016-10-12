@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
                          context:(SignalContext*)context;
 
 - (void) processPreKeyBundle:(SignalPreKeyBundle*)preKeyBundle;
-- (void) processPreKeyMessage:(SignalPreKeyMessage*)preKeyMessage;
+//- (void) processPreKeyMessage:(SignalPreKeyMessage*)preKeyMessage;
 
 @end
 NS_ASSUME_NONNULL_END

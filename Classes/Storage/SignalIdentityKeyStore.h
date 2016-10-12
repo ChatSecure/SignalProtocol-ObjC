@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
  * from the identity store, but retain any metadata that may be kept
  * alongside it.
  */
-- (BOOL) saveIdentity:(NSString*)name identityKey:(nullable NSData*)identityKey;
+- (BOOL) saveIdentity:(SignalAddress*)address identityKey:(nullable NSData*)identityKey;
 
 /**
  * Verify a remote client's identity key.
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  * store.  Only if it mismatches an entry in the local store is it considered
  * 'untrusted.'
  */
-- (BOOL) isTrustedIdentity:(NSString*)name identityKey:(NSData*)identityKey;
+- (BOOL) isTrustedIdentity:(SignalAddress*)address identityKey:(NSData*)identityKey;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -199,8 +199,8 @@
  * from the identity store, but retain any metadata that may be kept
  * alongside it.
  */
-- (BOOL) saveIdentity:(NSString*)name identityKey:(nullable NSData*)identityKey {
-    [self.identityKeyStore setObject:identityKey forKey:name];
+- (BOOL) saveIdentity:(SignalAddress*)address identityKey:(nullable NSData*)identityKey {
+    [self.identityKeyStore setObject:identityKey forKey:address.name];
     return YES;
 }
 
@@ -214,8 +214,8 @@
  * store.  Only if it mismatches an entry in the local store is it considered
  * 'untrusted.'
  */
-- (BOOL) isTrustedIdentity:(NSString*)name identityKey:(NSData*)identityKey {
-    NSData *existingKey = [self.identityKeyStore objectForKey:name];
+- (BOOL) isTrustedIdentity:(SignalAddress*)address identityKey:(NSData*)identityKey {
+    NSData *existingKey = [self.identityKeyStore objectForKey:address.name];
     if (!existingKey) { return YES; }
     if ([existingKey isEqualToData:identityKey]) {
         return YES;

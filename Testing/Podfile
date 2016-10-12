@@ -4,6 +4,6 @@ platform :osx, '10.11'
 use_frameworks!
 
 target 'SignalProtocolTests' do
-  pod 'SignalProtocolC', :podspec => 'https://raw.githubusercontent.com/ChatSecure/SignalProtocolC.podspec/62477d36650a4e31d494046082310180217a0d29/SignalProtocolC.podspec'
+  pod 'SignalProtocolC', :podspec => 'https://raw.githubusercontent.com/ChatSecure/SignalProtocolC.podspec/b2b483fe1c4c66cecfc0376c496e6a58ed1939b5/SignalProtocolC.podspec'
   pod 'SignalProtocol-ObjC', :path => '../SignalProtocol-ObjC.podspec'
 end

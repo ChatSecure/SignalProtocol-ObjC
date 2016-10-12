@@ -198,14 +198,14 @@ static int get_local_registration_id(void *user_data, uint32_t *registration_id)
     }
 }
 
-static int save_identity(const char *name, size_t name_len, uint8_t *key_data, size_t key_len, void *user_data) {
+static int save_identity(const signal_protocol_address *_address, uint8_t *key_data, size_t key_len, void *user_data) {
     id <SignalIdentityKeyStore> identityKeyStore = (__bridge id<SignalIdentityKeyStore>)(user_data);
-    NSString *nameString = [NSString stringWithUTF8String:name];
+    SignalAddress *address = [[SignalAddress alloc] initWithAddress:_address];
     NSData *key = nil;
     if (key_data) {
         key = [NSData dataWithBytes:key_data length:key_len];
     }
-    BOOL success = [identityKeyStore saveIdentity:nameString identityKey:key];
+    BOOL success = [identityKeyStore saveIdentity:address identityKey:key];
     if (success) {
         return 0;
     } else {
@@ -213,11 +213,11 @@ static int save_identity(const char *name, size_t name_len, uint8_t *key_data, s
     }
 }
 
-static int is_trusted_identity(const char *name, size_t name_len, uint8_t *key_data, size_t key_len, void *user_data) {
+static int is_trusted_identity(const signal_protocol_address *_address, uint8_t *key_data, size_t key_len, void *user_data) {
     id <SignalIdentityKeyStore> identityKeyStore = (__bridge id<SignalIdentityKeyStore>)(user_data);
-    NSString *nameString = [NSString stringWithUTF8String:name];
+    SignalAddress *address = [[SignalAddress alloc] initWithAddress:_address];
     NSData *key = [NSData dataWithBytes:key_data length:key_len];
-    BOOL isTrusted = [identityKeyStore isTrustedIdentity:nameString identityKey:key];
+    BOOL isTrusted = [identityKeyStore isTrustedIdentity:address identityKey:key];
     return isTrusted;
 }
 
