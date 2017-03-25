@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype) initWithAddress:(SignalAddress*)address
                          context:(SignalContext*)context;
 
-- (void) processPreKeyBundle:(SignalPreKeyBundle*)preKeyBundle;
+- (BOOL) processPreKeyBundle:(SignalPreKeyBundle*)preKeyBundle error:(NSError**)error;
 //- (void) processPreKeyMessage:(SignalPreKeyMessage*)preKeyMessage;
 
 @end

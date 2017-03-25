@@ -42,11 +42,22 @@
     return self;
 }
 
-- (void) processPreKeyBundle:(SignalPreKeyBundle*)preKeyBundle {
+- (BOOL) processPreKeyBundle:(SignalPreKeyBundle*)preKeyBundle error:(NSError**)error {
     NSParameterAssert(preKeyBundle);
-    if (!preKeyBundle) { return; }
+    if (!preKeyBundle) {
+        if (error) {
+            *error = ErrorFromSignalError(SignalErrorInvalidArgument);
+        }
+        return NO;
+    }
     int result = session_builder_process_pre_key_bundle(_builder, preKeyBundle.bundle);
-    NSAssert(result >= 0, @"couldn't process prekey bundle");
+    if (result < 0) {
+        if (error) {
+            *error = ErrorFromSignalError(result);
+        }
+        return NO;
+    }
+    return YES;
 }
 
 /*
