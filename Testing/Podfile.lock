@@ -1,22 +1,22 @@
 PODS:
-  - SignalProtocol-ObjC (0.1.0):
-    - SignalProtocolC (~> 2.3.1)
   - SignalProtocolC (2.3.1)
+  - SignalProtocolObjC (0.2.0):
+    - SignalProtocolC (~> 2.3.1)
 
 DEPENDENCIES:
-  - SignalProtocol-ObjC (from `../SignalProtocol-ObjC.podspec`)
   - SignalProtocolC (from `https://raw.githubusercontent.com/ChatSecure/SignalProtocolC/85af2029a2ec9795a25e3c9c4882b3d353eb92fc/SignalProtocolC.podspec`)
+  - SignalProtocolObjC (from `../SignalProtocolObjC.podspec`)
 
 EXTERNAL SOURCES:
-  SignalProtocol-ObjC:
-    :path: "../SignalProtocol-ObjC.podspec"
   SignalProtocolC:
     :podspec: https://raw.githubusercontent.com/ChatSecure/SignalProtocolC/85af2029a2ec9795a25e3c9c4882b3d353eb92fc/SignalProtocolC.podspec
+  SignalProtocolObjC:
+    :path: "../SignalProtocolObjC.podspec"
 
 SPEC CHECKSUMS:
-  SignalProtocol-ObjC: 92142d09b4a78a64d7ffda68d77ec5cc729510b1
   SignalProtocolC: e61c89693515347df8ed97961160a36cbe55c441
+  SignalProtocolObjC: 4a288756273f8b35e5caa97f31062a89201ff014
 
-PODFILE CHECKSUM: 15f190079621d5e80de62cc48b49ece495d893c7
+PODFILE CHECKSUM: 753e1d3b1a31626664acf455d448012d303af5ac
 
 COCOAPODS: 1.2.0

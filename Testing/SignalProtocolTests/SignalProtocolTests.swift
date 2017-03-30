@@ -21,18 +21,10 @@ class SignalProtocolTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        
+    func testAddress() {
+        let address = SignalAddress(name: "test", deviceId: 1)
+        XCTAssertNotNil(address)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }

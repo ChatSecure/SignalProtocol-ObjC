@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D938C01A1D207BD700DCC13F"
-               BuildableName = "SignalProtocolTests.xctest"
-               BlueprintName = "SignalProtocolTests"
-               ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -32,9 +16,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D938C01A1D207BD700DCC13F"
-               BuildableName = "SignalProtocolTests.xctest"
-               BlueprintName = "SignalProtocolTests"
+               BlueprintIdentifier = "D92D75391E8DAFA100B478E8"
+               BuildableName = "Tests-Framework-iOS.xctest"
+               BlueprintName = "Tests-Framework-iOS"
                ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -52,15 +36,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D938C01A1D207BD700DCC13F"
-            BuildableName = "SignalProtocolTests.xctest"
-            BlueprintName = "SignalProtocolTests"
-            ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,15 +45,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D938C01A1D207BD700DCC13F"
-            BuildableName = "SignalProtocolTests.xctest"
-            BlueprintName = "SignalProtocolTests"
-            ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

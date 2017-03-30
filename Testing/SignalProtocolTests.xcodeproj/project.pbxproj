@@ -7,31 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D92D75261E8DAEA300B478E8 /* SignalProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938C01D1D207BD700DCC13F /* SignalProtocolTests.swift */; };
+		D92D75271E8DAEA300B478E8 /* SignalProtocolObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EEEDCF1D25F1E600B8BC54 /* SignalProtocolObjCTests.m */; };
+		D92D75281E8DAEA300B478E8 /* SignalStoreInMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EEEDCB1D25E20500B8BC54 /* SignalStoreInMemoryStorage.m */; };
+		D92D75351E8DAEBF00B478E8 /* SignalProtocolObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D75301E8DAEAC00B478E8 /* SignalProtocolObjC.framework */; };
+		D92D75421E8DAFC600B478E8 /* SignalProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938C01D1D207BD700DCC13F /* SignalProtocolTests.swift */; };
+		D92D75431E8DAFC600B478E8 /* SignalProtocolObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EEEDCF1D25F1E600B8BC54 /* SignalProtocolObjCTests.m */; };
+		D92D75441E8DAFC600B478E8 /* SignalStoreInMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EEEDCB1D25E20500B8BC54 /* SignalStoreInMemoryStorage.m */; };
+		D92D75471E8DAFDE00B478E8 /* SignalProtocolObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D75321E8DAEAC00B478E8 /* SignalProtocolObjC.framework */; };
 		D938C01E1D207BD700DCC13F /* SignalProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938C01D1D207BD700DCC13F /* SignalProtocolTests.swift */; };
 		D9EEEDCC1D25E20500B8BC54 /* SignalStoreInMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EEEDCB1D25E20500B8BC54 /* SignalStoreInMemoryStorage.m */; };
 		D9EEEDD01D25F1E600B8BC54 /* SignalProtocolObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EEEDCF1D25F1E600B8BC54 /* SignalProtocolObjCTests.m */; };
-		E059F14CCA62AE6D295333E5 /* Pods_SignalProtocolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A26841D1B49F437109A651F /* Pods_SignalProtocolTests.framework */; };
+		F7F990F9D0490F448834F13D /* Pods_Tests_Pods_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E64A22C98D7A5458539BB20 /* Pods_Tests_Pods_macOS.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D92D752F1E8DAEAC00B478E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92D75291E8DAEAB00B478E8 /* SignalProtocolObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D92D74571E8DAAC600B478E8;
+			remoteInfo = "SignalProtocolObjC (macOS)";
+		};
+		D92D75311E8DAEAC00B478E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92D75291E8DAEAB00B478E8 /* SignalProtocolObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D92D75141E8DAC9E00B478E8;
+			remoteInfo = "SignalProtocolObjC (iOS)";
+		};
+		D92D75331E8DAEB400B478E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92D75291E8DAEAB00B478E8 /* SignalProtocolObjC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D92D74561E8DAAC600B478E8;
+			remoteInfo = "SignalProtocolObjC (macOS)";
+		};
+		D92D75451E8DAFD600B478E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92D75291E8DAEAB00B478E8 /* SignalProtocolObjC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D92D74D71E8DAC9E00B478E8;
+			remoteInfo = "SignalProtocolObjC (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		2A26841D1B49F437109A651F /* Pods_SignalProtocolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalProtocolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4074D8AA7B7FE8F25F5AE182 /* Pods-SignalProtocolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalProtocolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignalProtocolTests/Pods-SignalProtocolTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81CEA9F41336C91F194A6BB9 /* Pods-SignalProtocolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalProtocolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignalProtocolTests/Pods-SignalProtocolTests.release.xcconfig"; sourceTree = "<group>"; };
-		D938C01B1D207BD700DCC13F /* SignalProtocolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignalProtocolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E64A22C98D7A5458539BB20 /* Pods_Tests_Pods_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_Pods_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9939512A56AE23F16FA710 /* Pods-Tests-Pods-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-Pods-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-Pods-macOS/Pods-Tests-Pods-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D92D751E1E8DAE7500B478E8 /* Tests-Framework-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-Framework-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92D75291E8DAEAB00B478E8 /* SignalProtocolObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SignalProtocolObjC.xcodeproj; path = ../SignalProtocolObjC.xcodeproj; sourceTree = "<group>"; };
+		D92D753A1E8DAFA100B478E8 /* Tests-Framework-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-Framework-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D938C01B1D207BD700DCC13F /* Tests-Pods-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-Pods-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D938C01D1D207BD700DCC13F /* SignalProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProtocolTests.swift; sourceTree = "<group>"; };
 		D938C01F1D207BD700DCC13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9EEEDC91D25E20500B8BC54 /* SignalProtocolTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignalProtocolTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D9EEEDCA1D25E20500B8BC54 /* SignalStoreInMemoryStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalStoreInMemoryStorage.h; sourceTree = "<group>"; };
 		D9EEEDCB1D25E20500B8BC54 /* SignalStoreInMemoryStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalStoreInMemoryStorage.m; sourceTree = "<group>"; };
 		D9EEEDCF1D25F1E600B8BC54 /* SignalProtocolObjCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalProtocolObjCTests.m; sourceTree = "<group>"; };
+		DDC079BF2289657ECF053725 /* Pods-Tests-Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-Pods-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-Pods-macOS/Pods-Tests-Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D92D751B1E8DAE7500B478E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92D75351E8DAEBF00B478E8 /* SignalProtocolObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92D75371E8DAFA100B478E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92D75471E8DAFDE00B478E8 /* SignalProtocolObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D938C0181D207BD700DCC13F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E059F14CCA62AE6D295333E5 /* Pods_SignalProtocolTests.framework in Frameworks */,
+				F7F990F9D0490F448834F13D /* Pods_Tests_Pods_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +98,7 @@
 		77DAD5FBA67DC95600CE07D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A26841D1B49F437109A651F /* Pods_SignalProtocolTests.framework */,
+				2E64A22C98D7A5458539BB20 /* Pods_Tests_Pods_macOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -49,10 +106,19 @@
 		A8F8F8B2D353CF7BEFA80B8E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4074D8AA7B7FE8F25F5AE182 /* Pods-SignalProtocolTests.debug.xcconfig */,
-				81CEA9F41336C91F194A6BB9 /* Pods-SignalProtocolTests.release.xcconfig */,
+				8D9939512A56AE23F16FA710 /* Pods-Tests-Pods-macOS.debug.xcconfig */,
+				DDC079BF2289657ECF053725 /* Pods-Tests-Pods-macOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D92D752A1E8DAEAB00B478E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D92D75301E8DAEAC00B478E8 /* SignalProtocolObjC.framework */,
+				D92D75321E8DAEAC00B478E8 /* SignalProtocolObjC.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D938C01C1D207BD700DCC13F /* SignalProtocolTests */ = {
@@ -63,7 +129,6 @@
 				D9EEEDCA1D25E20500B8BC54 /* SignalStoreInMemoryStorage.h */,
 				D9EEEDCB1D25E20500B8BC54 /* SignalStoreInMemoryStorage.m */,
 				D938C01F1D207BD700DCC13F /* Info.plist */,
-				D9EEEDC91D25E20500B8BC54 /* SignalProtocolTests-Bridging-Header.h */,
 			);
 			path = SignalProtocolTests;
 			sourceTree = "<group>";
@@ -71,6 +136,7 @@
 		D9CC4AB51D1EF77600C327E5 = {
 			isa = PBXGroup;
 			children = (
+				D92D75291E8DAEAB00B478E8 /* SignalProtocolObjC.xcodeproj */,
 				D938C01C1D207BD700DCC13F /* SignalProtocolTests */,
 				D9CC4AC11D1EF7B600C327E5 /* Products */,
 				A8F8F8B2D353CF7BEFA80B8E /* Pods */,
@@ -81,7 +147,9 @@
 		D9CC4AC11D1EF7B600C327E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D938C01B1D207BD700DCC13F /* SignalProtocolTests.xctest */,
+				D938C01B1D207BD700DCC13F /* Tests-Pods-macOS.xctest */,
+				D92D751E1E8DAE7500B478E8 /* Tests-Framework-macOS.xctest */,
+				D92D753A1E8DAFA100B478E8 /* Tests-Framework-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,24 +157,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D938C01A1D207BD700DCC13F /* SignalProtocolTests */ = {
+		D92D751D1E8DAE7500B478E8 /* Tests-Framework-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D938C0201D207BD700DCC13F /* Build configuration list for PBXNativeTarget "SignalProtocolTests" */;
+			buildConfigurationList = D92D75251E8DAE7500B478E8 /* Build configuration list for PBXNativeTarget "Tests-Framework-macOS" */;
 			buildPhases = (
-				968E767F8CAB67C0F4FAC1DC /* [CP] Check Pods Manifest.lock */,
+				D92D751A1E8DAE7500B478E8 /* Sources */,
+				D92D751B1E8DAE7500B478E8 /* Frameworks */,
+				D92D751C1E8DAE7500B478E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D92D75341E8DAEB400B478E8 /* PBXTargetDependency */,
+			);
+			name = "Tests-Framework-macOS";
+			productName = "Tests-Framework-macOS";
+			productReference = D92D751E1E8DAE7500B478E8 /* Tests-Framework-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D92D75391E8DAFA100B478E8 /* Tests-Framework-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92D753F1E8DAFA100B478E8 /* Build configuration list for PBXNativeTarget "Tests-Framework-iOS" */;
+			buildPhases = (
+				D92D75361E8DAFA100B478E8 /* Sources */,
+				D92D75371E8DAFA100B478E8 /* Frameworks */,
+				D92D75381E8DAFA100B478E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D92D75461E8DAFD600B478E8 /* PBXTargetDependency */,
+			);
+			name = "Tests-Framework-iOS";
+			productName = "Tests-Framework-iOS";
+			productReference = D92D753A1E8DAFA100B478E8 /* Tests-Framework-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D938C01A1D207BD700DCC13F /* Tests-Pods-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D938C0201D207BD700DCC13F /* Build configuration list for PBXNativeTarget "Tests-Pods-macOS" */;
+			buildPhases = (
+				284B8E5C019CDA61A663181C /* [CP] Check Pods Manifest.lock */,
 				D938C0171D207BD700DCC13F /* Sources */,
 				D938C0181D207BD700DCC13F /* Frameworks */,
 				D938C0191D207BD700DCC13F /* Resources */,
-				E61273148401AFDC145814C6 /* [CP] Embed Pods Frameworks */,
-				5F9D043ECDB1033AFA8CAD9E /* [CP] Copy Pods Resources */,
+				C28B5F5C2B913F69DE085BD0 /* [CP] Embed Pods Frameworks */,
+				C0F95E3C9C8B677CC5F0659D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SignalProtocolTests;
+			name = "Tests-Pods-macOS";
 			productName = SignalProtocolTests;
-			productReference = D938C01B1D207BD700DCC13F /* SignalProtocolTests.xctest */;
+			productReference = D938C01B1D207BD700DCC13F /* Tests-Pods-macOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -115,9 +219,17 @@
 		D9CC4AB61D1EF77600C327E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
+					D92D751D1E8DAE7500B478E8 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					D92D75391E8DAFA100B478E8 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					D938C01A1D207BD700DCC13F = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0830;
@@ -134,14 +246,53 @@
 			mainGroup = D9CC4AB51D1EF77600C327E5;
 			productRefGroup = D9CC4AC11D1EF7B600C327E5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D92D752A1E8DAEAB00B478E8 /* Products */;
+					ProjectRef = D92D75291E8DAEAB00B478E8 /* SignalProtocolObjC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				D938C01A1D207BD700DCC13F /* SignalProtocolTests */,
+				D938C01A1D207BD700DCC13F /* Tests-Pods-macOS */,
+				D92D751D1E8DAE7500B478E8 /* Tests-Framework-macOS */,
+				D92D75391E8DAFA100B478E8 /* Tests-Framework-iOS */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D92D75301E8DAEAC00B478E8 /* SignalProtocolObjC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SignalProtocolObjC.framework;
+			remoteRef = D92D752F1E8DAEAC00B478E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D92D75321E8DAEAC00B478E8 /* SignalProtocolObjC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SignalProtocolObjC.framework;
+			remoteRef = D92D75311E8DAEAC00B478E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		D92D751C1E8DAE7500B478E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92D75381E8DAFA100B478E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D938C0191D207BD700DCC13F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,22 +303,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5F9D043ECDB1033AFA8CAD9E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignalProtocolTests/Pods-SignalProtocolTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		968E767F8CAB67C0F4FAC1DC /* [CP] Check Pods Manifest.lock */ = {
+		284B8E5C019CDA61A663181C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,7 +318,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E61273148401AFDC145814C6 /* [CP] Embed Pods Frameworks */ = {
+		C0F95E3C9C8B677CC5F0659D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-Pods-macOS/Pods-Tests-Pods-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28B5F5C2B913F69DE085BD0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,12 +345,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignalProtocolTests/Pods-SignalProtocolTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-Pods-macOS/Pods-Tests-Pods-macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D92D751A1E8DAE7500B478E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92D75261E8DAEA300B478E8 /* SignalProtocolTests.swift in Sources */,
+				D92D75281E8DAEA300B478E8 /* SignalStoreInMemoryStorage.m in Sources */,
+				D92D75271E8DAEA300B478E8 /* SignalProtocolObjCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92D75361E8DAFA100B478E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92D75431E8DAFC600B478E8 /* SignalProtocolObjCTests.m in Sources */,
+				D92D75421E8DAFC600B478E8 /* SignalProtocolTests.swift in Sources */,
+				D92D75441E8DAFC600B478E8 /* SignalStoreInMemoryStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D938C0171D207BD700DCC13F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,10 +383,162 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D92D75341E8DAEB400B478E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SignalProtocolObjC (macOS)";
+			targetProxy = D92D75331E8DAEB400B478E8 /* PBXContainerItemProxy */;
+		};
+		D92D75461E8DAFD600B478E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SignalProtocolObjC (iOS)";
+			targetProxy = D92D75451E8DAFD600B478E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D92D75231E8DAE7500B478E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SignalProtocolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.chatsecure.Tests-Framework-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D92D75241E8DAE7500B478E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SignalProtocolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.chatsecure.Tests-Framework-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D92D75401E8DAFA100B478E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SignalProtocolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.chatsecure.Tests-Framework-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D92D75411E8DAFA100B478E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SignalProtocolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.chatsecure.Tests-Framework-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D938C0211D207BD700DCC13F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4074D8AA7B7FE8F25F5AE182 /* Pods-SignalProtocolTests.debug.xcconfig */;
+			baseConfigurationReference = 8D9939512A56AE23F16FA710 /* Pods-Tests-Pods-macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -260,7 +583,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.whispersystems.SignalProtocolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "SignalProtocolTests/SignalProtocolTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -268,7 +590,7 @@
 		};
 		D938C0221D207BD700DCC13F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81CEA9F41336C91F194A6BB9 /* Pods-SignalProtocolTests.release.xcconfig */;
+			baseConfigurationReference = DDC079BF2289657ECF053725 /* Pods-Tests-Pods-macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -306,7 +628,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.whispersystems.SignalProtocolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "SignalProtocolTests/SignalProtocolTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -363,7 +684,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D938C0201D207BD700DCC13F /* Build configuration list for PBXNativeTarget "SignalProtocolTests" */ = {
+		D92D75251E8DAE7500B478E8 /* Build configuration list for PBXNativeTarget "Tests-Framework-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92D75231E8DAE7500B478E8 /* Debug */,
+				D92D75241E8DAE7500B478E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92D753F1E8DAFA100B478E8 /* Build configuration list for PBXNativeTarget "Tests-Framework-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92D75401E8DAFA100B478E8 /* Debug */,
+				D92D75411E8DAFA100B478E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D938C0201D207BD700DCC13F /* Build configuration list for PBXNativeTarget "Tests-Pods-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D938C0211D207BD700DCC13F /* Debug */,

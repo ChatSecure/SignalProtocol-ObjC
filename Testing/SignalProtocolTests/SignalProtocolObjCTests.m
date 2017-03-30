@@ -72,13 +72,16 @@
     SignalPreKeyBundle *bobPreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:bobLocalRegistrationId deviceId:bobAddress.deviceId preKeyId:bobPreKey1.preKeyId preKeyPublic:bobPreKey1.keyPair.publicKey signedPreKeyId:bobSignedPreKey.preKeyId signedPreKeyPublic:bobSignedPreKey.keyPair.publicKey signature:bobSignedPreKey.signature identityKey:bobIdentityKeyPair.publicKey];
     XCTAssertNotNil(bobPreKeyBundle);
     
+    NSError *error = nil;
     SignalSessionBuilder *bobSessionBuilder = [[SignalSessionBuilder alloc] initWithAddress:aliceAddress context:bobContext];
-    [bobSessionBuilder processPreKeyBundle:alicePreKeyBundle];
+    BOOL result = [bobSessionBuilder processPreKeyBundle:alicePreKeyBundle error:&error];
+    XCTAssertTrue(result);
+    XCTAssertNil(error);
     SignalSessionCipher *bobSessionCipher = [[SignalSessionCipher alloc] initWithAddress:aliceAddress context:bobContext];
     
+    error = nil;
     NSString *bobMessage = @"Hey it's Bob";
     NSData *bobMessageData = [bobMessage dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *error = nil;
     SignalCiphertext *bobOut = [bobSessionCipher encryptData:bobMessageData error:&error];
     XCTAssertNil(error, @"error encrypting data: %@", error);
     

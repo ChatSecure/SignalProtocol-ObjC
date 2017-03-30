@@ -3,7 +3,8 @@ platform :osx, '10.11'
 # Uncomment this line if you're using Swift
 use_frameworks!
 
-target 'SignalProtocolTests' do
-  pod 'SignalProtocolC', :podspec => 'https://raw.githubusercontent.com/ChatSecure/SignalProtocolC/85af2029a2ec9795a25e3c9c4882b3d353eb92fc/SignalProtocolC.podspec'
-  pod 'SignalProtocol-ObjC', :path => '../SignalProtocol-ObjC.podspec'
+target 'Tests-Pods-macOS' do
+  # pod 'SignalProtocolC', :podspec => 'https://raw.githubusercontent.com/ChatSecure/SignalProtocolC/85af2029a2ec9795a25e3c9c4882b3d353eb92fc/SignalProtocolC.podspec'
+  pod 'SignalProtocolC', '~> 2.3.1'
+  pod 'SignalProtocolObjC', :path => '../SignalProtocolObjC.podspec'
 end

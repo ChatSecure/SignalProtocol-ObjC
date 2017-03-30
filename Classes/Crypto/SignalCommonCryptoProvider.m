@@ -117,22 +117,6 @@ static void sha512_digest_cleanup_func(void *digest_context, void *user_data) {
     }
 }
 
-
-
-static int sha512_digest_func(signal_buffer **output, const uint8_t *data, size_t data_len, void *user_data) {
-    NSMutableData *mutableData = [NSMutableData dataWithLength:CC_SHA512_DIGEST_LENGTH];
-    if (!mutableData) {
-        return SG_ERR_NOMEM;
-    }
-    CC_SHA512(data, (CC_LONG)data_len, mutableData.mutableBytes);
-    signal_buffer *digestOut = signal_buffer_create(mutableData.bytes, mutableData.length);
-    if (!digestOut) {
-        return SG_ERR_NOMEM;
-    }
-    *output = digestOut;
-    return 0;
-}
-
 /**
  * Callback for an AES encryption implementation.
  *
