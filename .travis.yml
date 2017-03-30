@@ -11,7 +11,7 @@ before_script:
   - carthage checkout
   - cd Testing
   - bundle install
-  - bundle exec pod install
+  - bundle exec pod install --repo-update
   - set -o pipefail
 script:
   - xcodebuild -workspace SignalProtocolTests.xcworkspace -scheme Tests-Pods-macOS -sdk macosx -arch x86_64 test | xcpretty -c
