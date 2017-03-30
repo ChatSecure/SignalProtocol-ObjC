@@ -65,5 +65,5 @@ Pod::Spec.new do |s|
 
   s.source_files  = ["Classes/**/*.{h,m}"]
   s.private_header_files = ["Classes/**/*_Internal.h", "Classes/Models/SignalMessage.h"]
-  s.dependency 'SignalProtocolC', '~> 0.1.0'
+  s.dependency 'SignalProtocolC', '~> 2.3.1'
 end
