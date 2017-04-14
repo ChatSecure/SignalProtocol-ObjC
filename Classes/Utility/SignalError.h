@@ -10,9 +10,9 @@
 
 
 typedef NS_ENUM(NSInteger, SignalError) {
+    SignalErrorUnknown = 0,
     SignalErrorNoMemory,
     SignalErrorInvalidArgument,
-    SignalErrorUnknown,
     SignalErrorDuplicateMessage,
     SignalErrorInvalidKey,
     SignalErrorInvalidKeyId,
@@ -29,6 +29,8 @@ typedef NS_ENUM(NSInteger, SignalError) {
 };
 
 /** Translate from libsignal-protocol-c internal errors to SignalError enum */
-SignalError SignalErrorFromCode(int errorCode);
-NSString *SignalErrorDescription(SignalError signalError);
-NSError *ErrorFromSignalError(SignalError signalError);
+FOUNDATION_EXPORT SignalError SignalErrorFromCode(int errorCode);
+FOUNDATION_EXPORT NSString *SignalErrorDescription(SignalError signalError);
+/** Internal signal error codes */
+FOUNDATION_EXPORT NSError *ErrorFromSignalErrorCode(int errorCode);
+FOUNDATION_EXPORT NSError *ErrorFromSignalError(SignalError signalError);

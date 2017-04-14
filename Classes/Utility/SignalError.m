@@ -87,6 +87,11 @@ NSString *SignalErrorDescription(SignalError signalError) {
     }
 }
 
+NSError *ErrorFromSignalErrorCode(int errorCode) {
+    SignalError code = SignalErrorFromCode(errorCode);
+    return ErrorFromSignalError(code);
+}
+
 NSError *ErrorFromSignalError(SignalError signalError) {
     NSString *errorString = SignalErrorDescription(signalError);
     NSError *error = [NSError errorWithDomain:@"org.whispersystems.SignalProtocol" code:signalError userInfo:@{NSLocalizedDescriptionKey: errorString}];

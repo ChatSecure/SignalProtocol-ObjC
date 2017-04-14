@@ -53,12 +53,16 @@
     [inMemoryStore storePreKey:preKey1.serializedData preKeyId:preKey1.preKeyId];
     [inMemoryStore storeSignedPreKey:signedPreKey.serializedData signedPreKeyId:signedPreKey.preKeyId];
     
-    SignalPreKeyBundle *alicePreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:localRegistrationId deviceId:aliceAddress.deviceId preKeyId:preKey1.preKeyId preKeyPublic:preKey1.keyPair.publicKey signedPreKeyId:signedPreKey.preKeyId signedPreKeyPublic:signedPreKey.keyPair.publicKey signature:signedPreKey.signature identityKey:identityKeyPair.publicKey];
+    NSError *error = nil;
+    SignalPreKeyBundle *alicePreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:localRegistrationId deviceId:aliceAddress.deviceId preKeyId:preKey1.preKeyId preKeyPublic:preKey1.keyPair.publicKey signedPreKeyId:signedPreKey.preKeyId signedPreKeyPublic:signedPreKey.keyPair.publicKey signature:signedPreKey.signature identityKey:identityKeyPair.publicKey error:&error];
+    
+    XCTAssertNil(error);
+    XCTAssertNotNil(alicePreKeyBundle);
     
     SignalStoreInMemoryStorage *bobInMemoryStore = [[SignalStoreInMemoryStorage alloc] init];
-    SignalStorage *bobStorage = [[SignalStorage alloc] initWithSignalStore:inMemoryStore];
+    SignalStorage *bobStorage = [[SignalStorage alloc] initWithSignalStore:bobInMemoryStore];
     SignalContext *bobContext = [[SignalContext alloc] initWithStorage:bobStorage];
-    SignalKeyHelper *bobKeyHelper = [[SignalKeyHelper alloc] initWithContext:context];
+    SignalKeyHelper *bobKeyHelper = [[SignalKeyHelper alloc] initWithContext:bobContext];
     SignalIdentityKeyPair *bobIdentityKeyPair = [bobKeyHelper generateIdentityKeyPair];
     uint32_t bobLocalRegistrationId = [bobKeyHelper generateRegistrationId];
     bobInMemoryStore.identityKeyPair = bobIdentityKeyPair;
@@ -66,13 +70,13 @@
     NSArray<SignalPreKey*>*bobPreKeys = [bobKeyHelper generatePreKeysWithStartingPreKeyId:0 count:100];
     SignalPreKey *bobLastResortPreKey = [bobKeyHelper generateLastResortPreKey];
     XCTAssertNotNil(bobLastResortPreKey);
-    SignalSignedPreKey *bobSignedPreKey = [bobKeyHelper generateSignedPreKeyWithIdentity:identityKeyPair signedPreKeyId:0];
+    SignalSignedPreKey *bobSignedPreKey = [bobKeyHelper generateSignedPreKeyWithIdentity:bobIdentityKeyPair signedPreKeyId:0];
     
     SignalPreKey *bobPreKey1 = [bobPreKeys firstObject];
-    SignalPreKeyBundle *bobPreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:bobLocalRegistrationId deviceId:bobAddress.deviceId preKeyId:bobPreKey1.preKeyId preKeyPublic:bobPreKey1.keyPair.publicKey signedPreKeyId:bobSignedPreKey.preKeyId signedPreKeyPublic:bobSignedPreKey.keyPair.publicKey signature:bobSignedPreKey.signature identityKey:bobIdentityKeyPair.publicKey];
+    SignalPreKeyBundle *bobPreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:bobLocalRegistrationId deviceId:bobAddress.deviceId preKeyId:bobPreKey1.preKeyId preKeyPublic:bobPreKey1.keyPair.publicKey signedPreKeyId:bobSignedPreKey.preKeyId signedPreKeyPublic:bobSignedPreKey.keyPair.publicKey signature:bobSignedPreKey.signature identityKey:bobIdentityKeyPair.publicKey error:&error];
     XCTAssertNotNil(bobPreKeyBundle);
+    XCTAssertNil(error);
     
-    NSError *error = nil;
     SignalSessionBuilder *bobSessionBuilder = [[SignalSessionBuilder alloc] initWithAddress:aliceAddress context:bobContext];
     BOOL result = [bobSessionBuilder processPreKeyBundle:alicePreKeyBundle error:&error];
     XCTAssertTrue(result);
