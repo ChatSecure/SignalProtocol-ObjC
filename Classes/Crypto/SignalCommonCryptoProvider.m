@@ -117,6 +117,16 @@ static void sha512_digest_cleanup_func(void *digest_context, void *user_data) {
     }
 }
 
+// Old libsignal-protocol-c API
+static int sha512_digest_func(signal_buffer **output, const uint8_t *data, size_t data_len, void *user_data) {
+    NSMutableData *mutableData = [NSMutableData dataWithLength:CC_SHA512_DIGEST_LENGTH];
+    CC_SHA512(data, (CC_LONG)data_len, mutableData.mutableBytes);
+    signal_buffer *digestOut = signal_buffer_create(mutableData.bytes, mutableData.length);
+    *output = digestOut;
+    return 0;
+}
+
+
 /**
  * Callback for an AES encryption implementation.
  *
@@ -242,10 +252,12 @@ static int decrypt_func(signal_buffer **output,
     cryptoProvider.hmac_sha256_update_func = hmac_sha256_update_func;
     cryptoProvider.hmac_sha256_final_func = hmac_sha256_final_func;
     cryptoProvider.hmac_sha256_cleanup_func = hmac_sha256_cleanup_func;
-    cryptoProvider.sha512_digest_init_func = sha512_digest_init_func;
-    cryptoProvider.sha512_digest_update_func = sha512_digest_update_func;
-    cryptoProvider.sha512_digest_final_func = sha512_digest_final_func;
-    cryptoProvider.sha512_digest_cleanup_func = sha512_digest_cleanup_func;
+    // These commented SHA512 functions are used in newer versions of the libsignal-protocol-c library
+//    cryptoProvider.sha512_digest_init_func = sha512_digest_init_func;
+//    cryptoProvider.sha512_digest_update_func = sha512_digest_update_func;
+//    cryptoProvider.sha512_digest_final_func = sha512_digest_final_func;
+//    cryptoProvider.sha512_digest_cleanup_func = sha512_digest_cleanup_func;
+    cryptoProvider.sha512_digest_func = sha512_digest_func;
     cryptoProvider.encrypt_func = encrypt_func;
     cryptoProvider.decrypt_func = decrypt_func;
     cryptoProvider.user_data = (__bridge void *)(self);
