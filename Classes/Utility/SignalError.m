@@ -9,6 +9,8 @@
 #import "SignalError.h"
 @import SignalProtocolC;
 
+NSString * const SignalErrorDomain = @"org.whispersystems.SignalProtocol";
+
 SignalError SignalErrorFromCode(int errorCode) {
     switch (errorCode) {
         case SG_ERR_NOMEM:
@@ -94,6 +96,6 @@ NSError *ErrorFromSignalErrorCode(int errorCode) {
 
 NSError *ErrorFromSignalError(SignalError signalError) {
     NSString *errorString = SignalErrorDescription(signalError);
-    NSError *error = [NSError errorWithDomain:@"org.whispersystems.SignalProtocol" code:signalError userInfo:@{NSLocalizedDescriptionKey: errorString}];
+    NSError *error = [NSError errorWithDomain:SignalErrorDomain code:signalError userInfo:@{NSLocalizedDescriptionKey: errorString}];
     return error;
 }
