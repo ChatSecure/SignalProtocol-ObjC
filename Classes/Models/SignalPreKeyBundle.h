@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
                      signedPreKeyPublic:(NSData*)signedPreKeyPublic
                               signature:(NSData*)signature
                             identityKey:(NSData*)identityKey
-                                  error:(NSError**)error;
+                                  error:(NSError* __autoreleasing *)error;
 
 @end
 NS_ASSUME_NONNULL_END

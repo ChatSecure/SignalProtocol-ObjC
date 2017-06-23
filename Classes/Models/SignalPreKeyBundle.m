@@ -27,7 +27,7 @@
                      signedPreKeyPublic:(NSData*)signedPreKeyPublic
                               signature:(NSData*)signature
                             identityKey:(NSData*)identityKey
-                                  error:(NSError**)error {
+                                  error:(NSError* __autoreleasing *)error {
     NSParameterAssert(preKeyPublic);
     NSParameterAssert(signedPreKeyPublic);
     NSParameterAssert(signature);
@@ -90,7 +90,7 @@
 }
 
 /** This will do a rough check if bundle is considered valid */
-- (BOOL) checkValidity:(NSError **)error {
+- (BOOL) checkValidity:(NSError * __autoreleasing *)error {
     // session_builder.c:191
     // int session_builder_process_pre_key_bundle(session_builder *builder, session_pre_key_bundle *bundle)
     
