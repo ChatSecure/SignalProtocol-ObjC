@@ -14,7 +14,7 @@ The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS
 
 ## License
 
-Copyright 2016-2017 Chris Ballinger
+Copyright 2016-2018 Chris Ballinger
 
 Licensed under the GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
 
