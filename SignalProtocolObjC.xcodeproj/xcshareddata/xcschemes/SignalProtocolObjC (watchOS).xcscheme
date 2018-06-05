@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D92D74D71E8DAC9E00B478E8"
+               BlueprintIdentifier = "D95A528920C65DA4003B31CC"
                BuildableName = "SignalProtocolObjC.framework"
-               BlueprintName = "SignalProtocolObjC (iOS)"
+               BlueprintName = "SignalProtocolObjC (watchOS)"
                ReferencedContainer = "container:SignalProtocolObjC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D92D74D71E8DAC9E00B478E8"
+            BlueprintIdentifier = "D95A528920C65DA4003B31CC"
             BuildableName = "SignalProtocolObjC.framework"
-            BlueprintName = "SignalProtocolObjC (iOS)"
+            BlueprintName = "SignalProtocolObjC (watchOS)"
             ReferencedContainer = "container:SignalProtocolObjC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D92D74D71E8DAC9E00B478E8"
+            BlueprintIdentifier = "D95A528920C65DA4003B31CC"
             BuildableName = "SignalProtocolObjC.framework"
-            BlueprintName = "SignalProtocolObjC (iOS)"
+            BlueprintName = "SignalProtocolObjC (watchOS)"
             ReferencedContainer = "container:SignalProtocolObjC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

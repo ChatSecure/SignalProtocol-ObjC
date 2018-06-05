@@ -62,16 +62,6 @@
     return keys;
 }
 
-- (nullable SignalPreKey*)generateLastResortPreKey {
-    session_pre_key *pre_key = NULL;
-    int result = signal_protocol_key_helper_generate_last_resort_pre_key(&pre_key, _context.context);
-    if (result < 0) {
-        return nil;
-    }
-    SignalPreKey *key = [[SignalPreKey alloc] initWithPreKey:pre_key];
-    return key;
-}
-
 - (SignalSignedPreKey*)generateSignedPreKeyWithIdentity:(SignalIdentityKeyPair*)identityKeyPair
                                          signedPreKeyId:(uint32_t)signedPreKeyId
                                               timestamp:(NSDate*)timestamp

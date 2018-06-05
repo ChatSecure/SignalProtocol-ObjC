@@ -44,8 +44,6 @@
     inMemoryStore.localRegistrationId = localRegistrationId;
     NSArray<SignalPreKey*>*preKeys = [keyHelper generatePreKeysWithStartingPreKeyId:0 count:100];
     XCTAssert(preKeys.count == 100);
-    SignalPreKey *lastResortPreKey = [keyHelper generateLastResortPreKey];
-    XCTAssertNotNil(lastResortPreKey);
     SignalSignedPreKey *signedPreKey = [keyHelper generateSignedPreKeyWithIdentity:identityKeyPair signedPreKeyId:0];
     XCTAssertNotNil(signedPreKey);
     
@@ -68,8 +66,6 @@
     bobInMemoryStore.identityKeyPair = bobIdentityKeyPair;
     bobInMemoryStore.localRegistrationId = bobLocalRegistrationId;
     NSArray<SignalPreKey*>*bobPreKeys = [bobKeyHelper generatePreKeysWithStartingPreKeyId:0 count:100];
-    SignalPreKey *bobLastResortPreKey = [bobKeyHelper generateLastResortPreKey];
-    XCTAssertNotNil(bobLastResortPreKey);
     SignalSignedPreKey *bobSignedPreKey = [bobKeyHelper generateSignedPreKeyWithIdentity:bobIdentityKeyPair signedPreKeyId:0];
     
     SignalPreKey *bobPreKey1 = [bobPreKeys firstObject];
